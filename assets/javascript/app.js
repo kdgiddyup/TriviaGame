@@ -270,9 +270,9 @@ $(document).ready(function(){
 		// display results
 		$("#messageArea").html(
 			"Thanks for playing!<br/>Here's how you did:<br/>"+
-			"Correct answers: "+gameData.rightAnswers+ 
-			"<br/>Wrong answers: "+gameData.wrongAnswers+
-			"<br/>Unanswered questions: "+gameData.unanswered
+			"<strong>Correct answers:</strong> "+gameData.rightAnswers+ 
+			"<br/><strong>Wrong answers:</strong> "+gameData.wrongAnswers+
+			"<br/><strong>Unanswered questions:</strong> "+gameData.unanswered
 			);
 
 		//restore start button, but evolved as a replay/reset button
