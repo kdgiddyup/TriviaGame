@@ -1,119 +1,119 @@
 $(document).ready(function(){
 	var gameData = {
 		q: 0,
-		qTime: 5,
+		qTime: 15,
 		unanswered: 0,
 		rightAnswers: 0,
 		wrongAnswers: 0,
 		questions: [
-			{ 	text: 'this is question 1',
-				image: 'url',
-				answer: 'A',
-				options: 
-					{	
-						A: 'answer1 text - correct',
-						B: 'answer2 text',
-						C: 'answer3 text',
-						D: 'answer4 text'
-					}
-		 	},
-		 	{ 	text: 'this is question 2',
-				image: 'url',
+			{ 	text: 'Among Hugh Jackman\'s co-stars in "X-Men: Apocalypse" was:',
+				image: 'https://images-na.ssl-images-amazon.com/images/M/MV5BMjU1ODM1MzYxN15BMl5BanBnXkFtZTgwOTA4NDE2ODE@._V1_SY1000_CR0,0,676,1000_AL_.jpg',
 				answer: 'B',
 				options: 
 					{	
-						A: 'answer1 text',
-						B: 'answer2 text - correct',
-						C: 'answer3 text',
-						D: 'answer4 text'
+						A: 'Robert Downey Jr.',
+						B: 'Michael Fassbender',
+						C: 'Kate Beckinsale',
+						D: 'Dustin Sparks'
 					}
 		 	},
-			{ 	text: 'this is question 3',
-				image: 'url',
+		 	{ 	text: 'Michael Fassbender starred in "12 Years a Slave" with:',
+				image: 'https://images-na.ssl-images-amazon.com/images/M/MV5BMjExMTEzODkyN15BMl5BanBnXkFtZTcwNTU4NTc4OQ@@._V1_.jpg',
 				answer: 'C',
 				options: 
 					{	
-						A: 'answer1 text',
-						B: 'answer2 text',
-						C: 'answer3 text - correct',
-						D: 'answer4 text'
+						A: 'Javier Bardem',
+						B: 'Denzel Washington',
+						C: 'Chiwetel Ejiofor',
+						D: 'Anthony Hopkins'
 					}
 		 	},
-		 	{ 	text: 'this is question 4',
-				image: 'url',
-				answer: 'D',
-				options: 
-					{	
-						A: 'answer1 text',
-						B: 'answer2 text',
-						C: 'answer3 text',
-						D: 'answer4 text - correct'
-					}
-		 	},
-		 	{ 	text: 'this is question 5',
-				image: 'url',
+			{ 	text: 'Chiwetel Ejiofor starred opposite this actor in "Dr. Strange":',
+				image: 'https://images-na.ssl-images-amazon.com/images/M/MV5BNzA5MDEyMTY3Nl5BMl5BanBnXkFtZTgwODQ0MjcxMDE@._V1_SY1000_CR0,0,716,1000_AL_.jpg',
 				answer: 'A',
 				options: 
 					{	
-						A: 'answer1 text',
-						B: 'answer2 text',
-						C: 'answer3 text',
-						D: 'answer4 text'
+						A: 'Benedict Cumberbatch',
+						B: 'Chris Hemsworth',
+						C: 'Chris Pratt',
+						D: 'Naomi Watts'
 					}
 		 	},
-		 	{ 	text: 'this is question 6',
-				image: 'url',
-				answer: 'B',
+		 	{ 	text: 'Who, hosting with Amy Poehler, comically picked Benedict Cumberbatch out of the Golden Globes crowd in 2015 to present with Jennifer Anniston?',
+				image: 'https://68.media.tumblr.com/7b7db4259ec3f8c6eea01fe15cf30045/tumblr_ni1je2EdNq1rbf5cro1_500.gif',
+				answer: 'D',
 				options: 
 					{	
-						A: 'answer1 text',
-						B: 'answer2 text',
-						C: 'answer3 text',
-						D: 'answer4 text'
+						A: 'Melissa McCarthy',
+						B: 'Kate McKinnon',
+						C: 'Ellen DeGeneres',
+						D: 'Tina Fey'
 					}
 		 	},
-		 	{ 	text: 'this is question 7',
-				image: 'url',
+		 	{ 	text: 'With what actor does Tina Fey flirt in "Date Night"?',
+				image: 'https://klling.files.wordpress.com/2013/03/date-night-with-mark-wahlberg.jpg',
+				answer: 'A',
+				options: 
+					{	
+						A: 'Mark Wahlberg',
+						B: 'Jon Hamm',
+						C: 'Chris Hemsworth',
+						D: 'James Franco'
+					}
+		 	},
+		 	{ 	text: 'Who, portraying an airline pilot, dates Tina Fey\'s Liz Lemon on the TV show "30 Rock"?',
+				image: 'http://thedamper.com/images/1330.jpg',
+				answer: 'D',
+				options: 
+					{	
+						A: 'Jason Stathakis',
+						B: 'Alex Baldwin',
+						C: 'Jon Hamm',
+						D: 'Matt Damon'
+					}
+		 	},
+		 	{ 	text: 'This actor played Matt Damon\'s co-conspirator in a casino robbery in "Ocean\'s Eleven":',
+				image: 'https://images-na.ssl-images-amazon.com/images/M/MV5BYzVmYzVkMmUtOGRhMi00MTNmLThlMmUtZTljYjlkMjNkMjJkXkEyXkFqcGdeQXVyNDk3NzU2MTQ@._V1_SY1000_CR0,0,675,1000_AL_.jpg',
 				answer: 'C',
 				options: 
 					{	
-						A: 'answer1 text',
-						B: 'answer2 text',
-						C: 'answer3 text',
-						D: 'answer4 text'
+						A: 'Ben Affleck',
+						B: 'Robin Williams',
+						C: 'Brad Pitt',
+						D: 'Chris Pine'
 					}
 		 	},
-		 	{ 	text: 'this is question 8',
-				image: 'url',
-				answer: 'D',
-				options: 
-					{	
-						A: 'answer1 text',
-						B: 'answer2 text',
-						C: 'answer3 text',
-						D: 'answer4 text'
-					}
-		 	},
-		 	{ 	text: 'this is question 9',
-				image: 'url',
+		 	{ 	text: 'Which actor co-starred in "Seven" with Brad Pitt?',
+				image: 'https://images-na.ssl-images-amazon.com/images/M/MV5BOTUwODM5MTctZjczMi00OTk4LTg3NWUtNmVhMTAzNTNjYjcyXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SY1000_CR0,0,639,1000_AL_.jpg',
 				answer: 'A',
 				options: 
 					{	
-						A: 'answer1 text',
-						B: 'answer2 text',
-						C: 'answer3 text',
-						D: 'answer4 text'
+						A: 'Morgan Freeman',
+						B: 'Kevin Spacey',
+						C: 'Clive Owen',
+						D: 'Tom Cruise'
 					}
 		 	},
-		 	{ 	text: 'this is question 10',
-				image: 'url',
+		 	{ 	text: 'Who acted with Morgan Freeman as the central character in "Shawshank Redemption"?',
+				image: 'https://images-na.ssl-images-amazon.com/images/M/MV5BODU4MjU4NjIwNl5BMl5BanBnXkFtZTgwMDU2MjEyMDE@._V1_SY1000_CR0,0,672,1000_AL_.jpg',
 				answer: 'B',
 				options: 
 					{	
-						A: 'answer1 text',
-						B: 'answer2 text',
-						C: 'answer3 text',
-						D: 'answer4 text'
+						A: 'Frank Darabont',
+						B: 'Tim Robbins',
+						C: 'Clancy Brown',
+						D: 'Alan Tudyk'
+					}
+		 	},
+		 	{ 	text: 'Tim Robbins was joined in the cast of "Mystic River" by which actor playing the part of Sean Devine?',
+				image: 'https://images-na.ssl-images-amazon.com/images/M/MV5BOTQxMTEyMjI0NV5BMl5BanBnXkFtZTgwODE4ODAzMjE@._V1_SY1000_CR0,0,666,1000_AL_.jpg',
+				answer: 'D',
+				options: 
+					{	
+						A: 'Mark Wahlberg',
+						B: 'Casey Affleck',
+						C: 'Sean Penn',
+						D: 'Kevin Bacon'
 					}
 		 	}
 			],
@@ -127,9 +127,9 @@ $(document).ready(function(){
 		timeLeft=gameData.qTime; 
 
 		// update time in html every 1 second 
-		$('#countdown').html('Time remaining: '+timeLeft--+' seconds');
+		$('#countdown').html('Time remaining: '+timeLeft--);
 		counter = setInterval(function(){
-			$('#countdown').html('Time remaining: '+timeLeft--+' seconds');
+			$('#countdown').html('Time remaining: '+timeLeft--);
 			if (timeLeft < 0){
 				gameData.stopTimer();
 				gameData.timesUp();
@@ -142,7 +142,6 @@ $(document).ready(function(){
 		},
 	
 	nextQuestion: function(){
-		console.log(gameData);
 
 		// if this is the first question, set the question delay to 0 and hide the Start button
 		if (gameData.q == 0) { 
@@ -170,8 +169,9 @@ $(document).ready(function(){
 
 	showQuestion: function(thisQ) {
 		
-		// place question text in html
+		// place question text and image in html
 		$("#questionArea").html(gameData.questions[thisQ].text);
+		$("#imageArea").html("<img src='"+gameData.questions[thisQ].image+"'/>");
 		
 		//extract keys of options object into a letters array
 		var letters = Object.keys(gameData.questions[thisQ].options);
@@ -196,13 +196,15 @@ $(document).ready(function(){
 
 		// compare to index q-1 because by this point, q++ has occurred  
 		if (choice == gameData.questions[gameData.q-1].answer)
-			gameData.correct(choice)
+			gameData.correct()
 		else
-			gameData.incorrect(choice)
+			gameData.incorrect()
 		}, // end choose function
 	timesUp: function(){
 		// stop the countdown
 		gameData.stopTimer();
+		
+		$(".option").off().css("cursor","auto");
 		
 		// add class "right" to the correct answer to highlight it
 		$(".option").filter(function( index ){ 
@@ -219,29 +221,74 @@ $(document).ready(function(){
 		gameData.unanswered++
 		},
 
-	correct: function(userChoice){
+	correct: function(){
 		// stop the countdown
 		gameData.stopTimer();
+
+		// add class "right" to the correct answer to highlight it
+		$(".option").filter(function( index ){ 
+			return $(this).attr("data-choice") == gameData.questions[gameData.q-1].answer
+			}).addClass("right");
+
+		// send "correct" message to user
 		gameData.message('right');
+
+		// track results
 		gameData.rightAnswers++;
+		
+		// start next question cycle
 		gameData.nextQuestion()
 		},
 
-	incorrect: function(userChoice){
+	incorrect: function(){
+
+		// stop the countdown
 		gameData.stopTimer();
+
+		// add class "right" to the correct answer to highlight it
+		$(".option").filter(function( index ){ 
+			return $(this).attr("data-choice") == gameData.questions[gameData.q-1].answer
+			}).addClass("right");
+
+		// signal wrong answer to user
 		gameData.message('wrong');
+
+		// track results
 		gameData.wrongAnswers++;
+
+		// start next question cycle
 		gameData.nextQuestion()
 		},
 
+	showResults: function() {
+		// empty last question, options, image and countdown areas
+		$("#questionArea").empty();
+		$("#optionsArea").empty();
+		$("#countdown").empty();
+		$("#imageArea").empty();
+		
+		// display results
+		$("#messageArea").html(
+			"Thanks for playing!<br/>Here's how you did:<br/>"+
+			"Correct answers: "+gameData.rightAnswers+ 
+			"<br/>Wrong answers: "+gameData.wrongAnswers+
+			"<br/>Unanswered questions: "+gameData.unanswered
+			);
+
+		//restore start button, but evolved as a replay/reset button
+		$("#startButton").children("button").text("Replay").on("click",function(){
+				gameData.q = 0;
+				gameData.unanswered = 0;
+				gameData.rightAnswers = 0;
+				gameData.wrongAnswers = 0;
+				gameData.nextQuestion
+			});
+		$("#startButton").show();
+	},
 
 
 	message: function(input){ 
-		$('#messageArea').html(gameData.messages[input]);
-		/* 
-			if (input == 'wrong' || input == 'timeout')
-			messageArea.append('The correct answer is ')
-		*/
+		$('#countdown').html(gameData.messages[input]);
 		}
 
 
@@ -252,137 +299,3 @@ $(document).ready(function(){
 
 
 })// end document ready
-
-/* psuedo code
-GAME FLOW:
-
-start button to start the game
-
-one question, multiple choice answers
-
-
-timer immediately begins (25 sec)
-
-Case A:
-click wrong answer: message wrong answer, show right answer/image
-
-after 4 or 5 seconds, move to next question and restart timer
-
-Case B:
-time runs out: message time up, show right answer/image
-
-after 4 or 5 seconds, move to next question and restart timer
-
-if last question:
-show message "all done here's how you did"
-answers correct:
-answers incorrect:
-answers unanswered
-
-Start over button appears
-
-
-HTML STRUCTURE
-
-game canvas initial state holds visible START button,
-hidden question module, hidden results area and hidden START OVER button
-
-on start, start button is hidden (not removed, to make reset easier) and question module is revealed. 
-
-Question module consists of timer, question, answer options, game message (right, wrong, time up) area, right answer image
-	 - question and answers are built programmatically from game object; answer options are given ids passed back in click event
-
-after last question outcome is determined, game results are revealed
-
-CODE STRUCTURE
-
-to do:  how to watch for timeLeft == 0 to trigger gameData.timesUp
-
-gameData
-	q: 0,
-	rightAnswers: 0,
-	wrongAnswers: 0,
-	unanswered: 0,
-	qTime: 25,
-	userchoice: '',
-	resetGame: function() {
-		gameData.rightAnswers = 0;
-		gameData.wrongAnswers = 0;
-		gameData.unanswered = 0;
-		gameData.q = 0;
-		gameData.nextQuestion
-		},
-	startTimer: function(){ 
-		timeLeft=gameData.qTime; 
-		counter = setInterval(function(){
-			$('#countdown').html('Time remaining: '+timeLeft--+' seconds'),1000)
-			}
-		},
-	stopTimer: function(){clearInterval(counter)},
-	nextQuestion: function(){ setTimeout(
-		function(){
-			q++;
-			if (q < gameData.questions.length) {
-				gameData.startTimer;
-				gameData.showQuestion(q)
-				},4000)
-			} 
-		},
-	showQuestion: function(thisQ) {
-		messageArea.html(gameData.questions[thisQ].text);
-		var letters = Object.keys(gameData.questions[thisQ].options);
-		gameData.questions[thisQ].options.each( index ) {
-			'<span id="'+letters[index]+'">'+optionsArea.html(letters[index]+': '+gameData.questions[thisQ].options[letters[index]]+'</span>').on('click',gameData.choose)
-			}
-		},
-	choose: function($(this)) {
-		userChoice = $(this);
-		if ($(this).id == gameData.questions[thisQ].answer)
-			correct
-		else
-			incorrect
-		},
-	timesUp: function(){
-		gameData.stopTimer;
-		gameData.message('timeout');
-		gameData.nextQuestion;
-		gameData.unanswered++
-		},
-	correct: function(){
-		gameData.stopTimer;
-		gameData.message('right');
-		gameData.correctAnswers++
-		}
-	incorrect: function(){
-		gameData.stopTimer;
-		gameData.message('wrong');
-		gameData.wrongAnswers++
-		},
-	message: function(input,option){ 
-		messageArea.html(gameData.messages[input]);
-		if (input == 'wrong' || input == 'timeout')
-			messageArea.append('The correct answer is ')
-		},
-	questions:
-		[
-			{ 
-			text: question string,
-			image: url,
-			answer: A,
-			options: 
-				{A: answer1 text},
-				{B: answer2 text},
-				{C: answer3 text},
-				{D: answer4 text}
-		 	}
-			{
-			....
-			}
-		],
-	messages:
-		right: 'That's correct!'
-		wrong: 'Sorry, you're incorrect!'
-		timeout: 'Sorry, you're out of time!'
-	
-
-*/

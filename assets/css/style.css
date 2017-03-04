@@ -1,18 +1,49 @@
+body {
+	background-image: url(../images/bg.jpg);
+	background-size: cover;
+	background-position: right;
+}
+h1 {
+	text-align: center;
+	font-size: 4em;
+	font-weight: bold;
+}
 #startButton {
-	top: 100px;
+	top: 50%;
 	position: relative;
 }
 #startButton button {
 	width: 100%;
 }
+#questionArea {
+	font-weight: bold;
+	font-size: 2em;
+	margin: 30px 0 0 0;
+}
+#questionRow {
+	margin: 30px 0 0 0;
+}
+#optionsArea {
+	margin: 30px 0;
+}
 .option {
 	cursor: pointer;
+	padding: 3px;
+	font-size: 1.5em;
+
 }
-.option:visited {
+#imageArea img {
+	width: 100%;
+}
+#countdown {
 	font-weight: bold;
+	font-size: 2em;
+	text-align: center;
 }
-.wrong {
-	color: #ccc;
+#messageArea {
+	font-weight: bold;
+	font-size: 2em;
+	margin: 30px 0 0 0 ;
 }
 .right {
 	background-color: red;
