@@ -1,0 +1,20 @@
+#startButton {
+	top: 100px;
+	position: relative;
+}
+#startButton button {
+	width: 100%;
+}
+.option {
+	cursor: pointer;
+}
+.option:visited {
+	font-weight: bold;
+}
+.wrong {
+	color: #ccc;
+}
+.right {
+	background-color: red;
+	color: white;
+}
